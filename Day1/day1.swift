@@ -33,8 +33,8 @@ func part2() {
 
     let n = arr.count
     for i in 0..<n {
-        for j in i+1..<n {
-            for k in j+1..<n {
+        for j in i + 1..<n {
+            for k in j + 1..<n {
 
                 if arr[i] + arr[j] + arr[k] == 2020 {
                     print(arr[i] * arr[j] * arr[k])
