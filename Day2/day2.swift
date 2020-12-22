@@ -47,12 +47,12 @@ struct PasswordPolicy {
         let maxChar = password[password.index(startInd, offsetBy: max - 1)]
         
         // XOR (^ does is Int typed...)
-        return (minChar == letter) != (maxChar != letter)
+        return (minChar == letter) != (maxChar == letter)
     }
 }
 
 // Ans 1: 550
-// Ans 2: 366
+// Ans 2: 634
 func main() {
     var validCount = 0
     while let line = readLine()  {
